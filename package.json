@@ -9,7 +9,8 @@
     "e2e:ci": "cypress run",
     "e2e": "cypress open",
     "lint": "eslint src/**/*.{js,html,css}",
-    "lint:ci": "eslint src/**/*.{js,html,css} --fix"
+    "lint:ci": "eslint src/**/*.{js,html,css} --fix",
+    "prettier:ci": "prettier src/**/*.{js,html,css} --write"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,13 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
+    "prettier": "^2.3.2",
     "serve": "^12.0.0"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "none",
+    "singleQuote": true,
+    "printWidth": 80
   }
 }
