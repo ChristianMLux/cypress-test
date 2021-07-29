@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "devserver": "serve ./src",
     "e2e:ci": "cypress run",
-    "e2e": "cypress open"
+    "e2e": "cypress open",
+    "lint": "eslint src/**/*.{js,html,css}",
+    "lint:ci": "eslint src/**/*.{js,html,css} --fix"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,12 @@
   "homepage": "https://github.com/ChristianMLux/cypress-test#readme",
   "devDependencies": {
     "cypress": "^8.0.0",
+    "eslint": "^7.31.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-html-parser": "^6.8.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
     "serve": "^12.0.0"
   }
 }
