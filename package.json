@@ -4,8 +4,10 @@
   "description": "cypress-test-repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
-    "devserver": "serve ./src"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "serve ./src",
+    "e2e:ci": "cypress run",
+    "e2e": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/ChristianMLux/cypress-test#readme",
   "devDependencies": {
+    "cypress": "^8.0.0",
     "serve": "^12.0.0"
   }
 }
