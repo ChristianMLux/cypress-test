@@ -1,0 +1,23 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parser": "eslint-html-parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018,
+        "ecmaFeatures": {
+            "globalReturn": false,
+            "impliedStrict": false,
+            "jsx": false
+        },
+        "parser": "espree"
+    },
+    "rules": {
+        "semi": 1
+    }
+}
